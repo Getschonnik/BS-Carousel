@@ -1,6 +1,6 @@
 	/* carousel */
 	.carousel, .carousel-inner { height: 647px !important; }
-	.objf { object-fit: cover; height: 647px; width: 100%; }
+	.objf { object-fit: cover; height: 100%; width: 100%; }
 	.carousel-adm { position: absolute; z-index: 249999; right: 5%; top: 2%; font-family: arial; font-size: 90%; background-color: #F4F4F4; color: #595959; padding: 4px 12px; border-radius: 4%; border: 1px solid #DCDCDC; }
 	
 	a.adm_edit:link { color: #595959; }
