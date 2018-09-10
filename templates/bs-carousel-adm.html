@@ -1,0 +1,169 @@
+<!-- title -->
+<h3>Carousel {administration}</h3>
+<!-- EOA -->
+<!-- overview_form_start -->
+<form action="index.php?p=bs-carousel-adm" method="post" />
+	<input type="hidden" name="postsort" value="1" />
+<!-- EOA -->
+<!-- overview -->
+	<div class="row carousel-adm-overview">
+		<div class="col-1">
+			<img src="$imgPath" width="60" height="60" />
+			<input type="hidden" name="carouselID[]" value="{id}">
+		</div>
+		<div class="col-3 of-hidden">
+			{title}
+		</div>
+		<div class="col-5 of-hidden">
+			{shorttext}
+		</div>
+		<div class="col-3">
+			<select class="f-left" name="sort[]">
+			  $select_option
+			</select>
+			$adm-btn-edit $adm-btn-delete
+		</div>
+	</div>
+<!-- EOA -->
+<!-- overview_form_end -->
+	<button type="submit" class="btn-submit f-right"><i class="fas fa-sync-alt"></i> {Sort}</button><br />
+	<br />
+</form>
+<!-- EOA -->
+<!-- select-option -->
+	<option value="{nr}" {selected}>{nr}</option>
+<!-- EOA -->
+
+<!-- adm-btn-new -->
+<div class="full-width text-right">
+	<a href="index.php?p=bs-carousel-adm&new=item"><div class="div-btn-submit green"><i class="fas fa-plus"></i> {New}</div></a> &nbsp;
+</div>
+<!-- EOA --><!-- adm-btn-edit -->
+<a href="index.php?p=bs-carousel-adm&edit={id}"><div class="div-btn-submit"><i class="fas fa-pencil-alt"></i> {Edit}</div></a> &nbsp;
+<!-- EOA -->
+<!-- adm-btn-delete -->
+<a href="index.php?p=bs-carousel-adm&del={id}"><div class="div-btn-submit"><i class="fas fa-trash"></i> {Delete}</div></a>
+<!-- EOA -->
+
+<!-- adm-new -->
+<form action="index.php?p=bs-carousel-adm" method="post" enctype="multipart/form-data">
+<h4>{New}</h4>
+<div class="row">
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="title1">{Title}</span>
+		  </div>
+		  <input type="text" name="title" class="form-control" placeholder="{Title}" aria-label="{Title}" aria-describedby="title1">
+		</div>
+	</div>	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="titlecolor">{Title_color}</span>
+		  </div>
+		  <input type="text" name="title_color" class="form-control" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		</div>
+	</div>
+	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="text">{Text}</span>
+		  </div>
+		  <input type="text" name="text" class="form-control" placeholder="{Text}" aria-label="{Title_color}" aria-describedby="text">
+		</div>
+	</div>	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="textcolor">{Text_color}</span>
+		  </div>
+		  <input type="text" name="text_color" class="form-control" placeholder="{Text_color}" aria-label="{Title_color}" aria-describedby="textcolor">
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="inputGroupFileAddon01">{Upload}</span>
+		  </div>
+		  <div class="custom-file">
+			<input type="file" class="custom-file-input" name="fileToUpload" id="fileToUpload">
+			<label class="custom-file-label" for="fileToUpload">{Choose}</label>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="col-12">
+		<button type="submit" class="div-btn-submit f-right green"><i class="far fa-save"></i> {Save}</button>
+	</div>
+
+</div>
+</form>
+<!-- EOA -->
+<!-- adm-edit -->
+<form action="index.php?p=bs-carousel-adm" method="post" enctype="multipart/form-data">
+<h4>{Edit}</h4>
+<input type="hidden" value="{id}" name="editID" />
+<div class="row">
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="title1">{Title}</span>
+		  </div>
+		  <input type="text" name="titleedit" class="form-control" placeholder="{Title}" value="{titlevalue}" aria-label="{Title}" aria-describedby="title1">
+		</div>
+	</div>	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="titlecolor">{Title_color}</span>
+		  </div>
+		  <input type="text" name="title_coloredit" class="form-control" value="{titlecolorvalue}" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		</div>
+	</div>
+	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="text">{Text}</span>
+		  </div>
+		  <input type="text" name="textedit" class="form-control" placeholder="{Text}" value="{textvalue}" aria-label="{Title_color}" aria-describedby="text">
+		</div>
+	</div>	
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="textcolor">{Text_color}</span>
+		  </div>
+		  <input type="text" name="text_coloredit" class="form-control" placeholder="{Text_color}" value="{textcolorvalue}" aria-label="{Title_color}" aria-describedby="textcolor">
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="inputGroupFileAddon01">{Upload}</span>
+		  </div>
+		  <div class="custom-file">
+			<input type="file" class="custom-file-input" name="fileToUpload" id="fileToUpload">
+			<label class="custom-file-label" for="fileToUpload">{Choose}</label>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="col-12">
+		<button type="submit" class="div-btn-submit f-right green"><i class="far fa-save"></i> {Save}</button>
+	</div>
+
+</div>
+</form>
+<!-- EOA -->
+<!-- adm-edit -->
+
+<!-- EOA -->
+
+<!-- footer -->
+<div class="cadm-footer">
+	<span><b>{Author}</b>: Legendary Prototype, Getschonnik &nbsp;&nbsp;&middot;&nbsp;&nbsp; <b>{version}</b> 1.0.1
+</div>
+<!-- EOA -->

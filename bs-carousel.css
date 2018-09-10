@@ -1,0 +1,29 @@
+	/* carousel */
+	.carousel, .carousel-inner { height: 647px !important; }
+	.objf { object-fit: cover; height: 647px; width: 100%; }
+	.carousel-adm { position: absolute; z-index: 249999; right: 5%; top: 2%; font-family: arial; font-size: 90%; background-color: #F4F4F4; color: #595959; padding: 4px 12px; border-radius: 4%; border: 1px solid #DCDCDC; }
+	
+	a.adm_edit:link { color: #595959; }
+	a.adm_edit:visited { color: #595959; }
+	a.adm_edit:hover { color: #000; text-decoration: none; }
+	a.adm_edit:active { color: #595959; }
+	.fa-leprosettings { font-size: 80%; color: #B00505; }
+
+	div.cadm-footer { width: 100%; padding: 4px 8px 20px 0; border-top: 1px solid #EBEBEB; color: grey; font-size: 50%; text-align: right; }
+	div.carousel-adm-overview { clear: both; padding: 10px 0; }
+	
+	.btn-submit { font-family: arial; font-size: 90%; background-color: #F4F4F4; color: #595959; padding: 4px 12px; border-radius: 4%; border: 1px solid #DCDCDC; }
+	.div-btn-submit { font-family: arial; overflow:hidden; cursor: pointer; min-width: 30px; float: left; margin-left: 6px; background-color:AppWorkspace; font-size: 90%; background-color: #F4F4F4; color: #595959; padding: 4px 12px; border-radius: 4%; border: 1px solid #DCDCDC; }
+	.green { color: #066B12; }
+	.full-width { width: 100%; }
+	.f-right { float: right }
+	.f-left { float: left }
+	.of-hidden { overflow: hidden; }
+	
+	/* Mobile adjustment */
+	@media screen and (max-width : 768px) {
+		#mycarousel { height: 220px !important; }
+		.carousel, carousel-inner { height: 220px !important; }
+		.objf { width: 100% !important; height: 100% !important;  }
+
+	}

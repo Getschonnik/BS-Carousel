@@ -1,0 +1,40 @@
+<!-- main -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    $indicators
+  </ol>
+  <div class="carousel-inner">
+  $adm
+    $innerItems
+		
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- EOA -->
+<!-- indicator -->
+<li data-target="#carouselExampleIndicators" data-slide-to="$number" $isActive></li>
+<!-- EOA -->
+<!-- innerItems -->
+    <div class="carousel-item $isActive">
+      <img class="d-block w-100 objf" src="$imagePath" alt="{altName}">
+		$captionBlock
+    </div>
+<!-- EOA -->
+<!-- captionBlock -->
+<div class="carousel-caption d-none d-md-block">
+			<h5  style="color: {title_color} !important">{title}</h5>
+			<p  style="color: {text_color} !important">{message}</p>
+		  </div>
+<!-- EOA -->
+<!-- adminButton -->
+<div class="carousel-adm">
+	<a href="index.php?p=bs-carousel-adm" alt="{edit}" class="adm_edit"><i class="fas fa-cog fa-leprosettings"></i> &nbsp;{edit}</a>
+</div>
+<!-- EOA -->

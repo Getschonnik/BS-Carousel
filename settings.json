@@ -1,0 +1,30 @@
+{
+    "name": "BS Carousel",
+    "description": "A Bootstrap carousel",
+    "keywords": ["lepro", "cm.sys", "plugin", "bootstrap", "carousel"],
+    "homepage": "https://github.com/Getschonnik",
+	"download": "https://https://github.com/theauthor-asexample/pluginname/plugin.zip",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Matti. <Getschonnik> W.",
+            "email": "info@getschonnik.de"
+        }
+    ],
+	"path": "includes/plugins/BS Carousel/",
+    "require": {
+        "php": "7.0.0",
+        "cm.sys": "1.0"
+    },
+    "files": {
+        "index": {
+			"a": "bs-carousel-adm.php",
+			"b": "bs-carousel-install.php"
+        },
+		"content": {
+			"a": "bs-carousel.php"
+		}
+	},
+	"license": "GNU GPLv3"
+}
