@@ -1,8 +1,9 @@
 	/* carousel */
-	.carousel, .carousel-inner { height: 647px !important; }
-	.objf { object-fit: cover; height: 100%; width: 100%; }
+	.carousel, .carousel-inner, .carousel-item { height: 647px !important; }
+	.objf { position: absolute; top: 0; left: 0; width: 100%; height: 647px !important; width: 100%; }
+
 	.carousel-adm { position: absolute; z-index: 249999; right: 5%; top: 2%; font-family: arial; font-size: 90%; background-color: #F4F4F4; color: #595959; padding: 4px 12px; border-radius: 4%; border: 1px solid #DCDCDC; }
-	
+	.carousel-caption { margin-top: -5%; }
 	a.adm_edit:link { color: #595959; }
 	a.adm_edit:visited { color: #595959; }
 	a.adm_edit:hover { color: #000; text-decoration: none; }
