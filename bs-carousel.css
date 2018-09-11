@@ -24,7 +24,7 @@
 	/* Mobile adjustment */
 	@media screen and (max-width : 768px) {
 		#mycarousel { height: 220px !important; }
-		.carousel, carousel-inner { height: 220px !important; }
+		.carousel, .carousel-inner, .carousel-item { height: 220px !important; }
 		.objf { width: 100% !important; height: 100% !important;  }
 
 	}
