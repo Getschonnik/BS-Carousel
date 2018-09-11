@@ -92,10 +92,16 @@ global $_plugins, $_globals;
 			return false;	
 		}
 		
+		
+		
+		
+		
+		
 		redirect("index.php?p=bs-carousel-adm", 5);
 		return false;
 	}
-
+	
+	
 // Edit 
 	if(isset($_GET['edit'])) {
 		$id = intval(trim($_GET['edit']));
@@ -240,7 +246,9 @@ global $_plugins, $_globals;
 	// form (sort) start
 	$showOverviewStart = new template("bs-carousel-adm", $admCarousel['path']."templates/");
 	echo $showOverviewStart->showTemplate("overview_form_start", array());	
+	
 
+	
 	// button new
 	if($_globals['user']->getAccess($_SESSION['userid'], $accessLevel)) {
 		$nbtn = array();
@@ -316,10 +324,21 @@ global $_plugins, $_globals;
 		return false; 
 	}
 	
+	
+
+
+
+/*
+INSERT INTO `db_plugin_bs-carousel` (`carouselID`, `title`, `title_color`, `text`, `text_color`, `link1`, `sort`) VALUES ('1', '{[en-EN]}The first title {[de-DE]}Der erste Titel', '#000000', '{[en-EN]}A text can stay here {[de-DE]}Ein text kann hier stehen', '#ffffff', '/images/1.jpg', '0');
+*/
+
 	// show footer
 	$titleData = array();
 	$titleData['{Author}'] = $lang['Author'];
 	$titleData['{version}'] = $lang['version'];
 	$showTitle = new template("bs-carousel-adm", $admCarousel['path']."templates/");
 	echo $showTitle->showTemplate("footer", $titleData);
+
+	
+
 ?>

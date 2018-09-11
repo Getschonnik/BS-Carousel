@@ -62,7 +62,8 @@
 		  <div class="input-group-prepend">
 			<span class="input-group-text" id="titlecolor">{Title_color}</span>
 		  </div>
-		  <input type="text" name="title_color" class="form-control" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		  <input type="text" name="title_color" id="title_color" class="form-control" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		    <input id="background-color1" type="color" value="#ff0000" onchange="javascript:document.getElementById('title_color').value = document.getElementById('background-color1').value;" />
 		</div>
 	</div>
 	
@@ -79,7 +80,8 @@
 		  <div class="input-group-prepend">
 			<span class="input-group-text" id="textcolor">{Text_color}</span>
 		  </div>
-		  <input type="text" name="text_color" class="form-control" placeholder="{Text_color}" aria-label="{Title_color}" aria-describedby="textcolor">
+		  <input type="text" name="text_color" id="text_color" class="form-control" placeholder="{Text_color}" aria-label="{Title_color}" aria-describedby="textcolor">
+		  <input id="background-color2" type="color" value="#ff0000" onchange="javascript:document.getElementById('text_color').value = document.getElementById('background-color2').value;" />
 		</div>
 	</div>
 	<div class="col-12">
@@ -119,7 +121,8 @@
 		  <div class="input-group-prepend">
 			<span class="input-group-text" id="titlecolor">{Title_color}</span>
 		  </div>
-		  <input type="text" name="title_coloredit" class="form-control" value="{titlecolorvalue}" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		  <input type="text" name="title_coloredit" id="title_color" class="form-control" value="{titlecolorvalue}" placeholder="{Title_color}" aria-label="{Title_color}" aria-describedby="titlecolor">
+		  <input id="background-color1" type="color" value="{titlecolorvalue}" onchange="javascript:document.getElementById('title_color').value = document.getElementById('background-color1').value;" />
 		</div>
 	</div>
 	
@@ -136,7 +139,8 @@
 		  <div class="input-group-prepend">
 			<span class="input-group-text" id="textcolor">{Text_color}</span>
 		  </div>
-		  <input type="text" name="text_coloredit" class="form-control" placeholder="{Text_color}" value="{textcolorvalue}" aria-label="{Title_color}" aria-describedby="textcolor">
+		  <input type="text" name="text_coloredit" id="text_color" class="form-control" placeholder="{Text_color}" value="{textcolorvalue}" aria-label="{Title_color}" aria-describedby="textcolor">
+		   <input id="background-color2" type="color" value="{textcolorvalue}" onchange="javascript:document.getElementById('text_color').value = document.getElementById('background-color2').value;" />
 		</div>
 	</div>
 	<div class="col-12">
