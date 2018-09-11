@@ -20,6 +20,7 @@
 	.f-right { float: right }
 	.f-left { float: left }
 	.of-hidden { overflow: hidden; }
+	#background-color1, #background-color2 { height: 38px !important; }
 	
 	/* Mobile adjustment */
 	@media screen and (max-width : 768px) {
